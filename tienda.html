@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Pokémon por Categorías</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="https://cheappokemonstore.com/cdn/shop/files/CPS_Logo.png?v=1712410401&width=500">
+</head>
+<body>
+    <div class="container">
+        <h1>Tienda Pokémon</h1>
+        <div class="buscador-container">
+            <button id="toggle-buscador">🔍</button>
+            <div id="buscador" class="oculto">
+                <input type="text" id="busqueda" placeholder="Buscar productos...">
+                <button onclick="buscarProductos()">Buscar</button>
+            </div>
+        </div>
+        <div class="carrito-container">
+            <button id="toggle-carrito">🛒</button>
+            <div id="carrito-desplegable" class="oculto">
+                <h3>Carrito de Compras</h3>
+                <div id="productos-carrito"></div>
+                <p>Total: $<span id="total-carrito">0</span></p>
+                <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            </div>
+        </div>
+        <div id="productos">
+            <section class="categoria">
+                <h2>Juguetes</h2>
+                <div class="productos-grid">
+                    <div class="producto">
+                        <div class="carousel">
+                            <button class="prev">&lt;</button>
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_760594-MCO76943980233_062024-O.webp" alt="Peluche Pikachu"> 
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_966231-MCO76739268556_062024-O.webp" alt="Peluche Pikachu">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_894693-MCO76739327540_062024-O.webp" alt="Peluche Pikachu">
+                            <button class="next">&gt;</button>
+                        </div>
+                        <h3>Peluche Pikachu</h3>
+                        <p>Precio: $35000</p>
+                        <p>tamaño: 23 cm</p>
+                        <p>cantidad: 10</p>
+                        <button onclick="agregarAlCarrito('Peluche Pikachu', 35000, 'https://peluches-pokemon.com/wp-content/uploads/2022/01/pikachu-peluche-gigante-pikachu-sonriente-80cm.jpg', 'Juguetes')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <div class="carousel">
+                            <button class="prev">&lt;</button>
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_719774-MLU73047165037_112023-O.webp" alt="Figura Charizard">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_879474-MLU73047012601_112023-O.webp" alt="Figura Charizard">
+                            <button class="next">&gt;</button>
+                        </div>
+                        <h3>Figura Charizard</h3>
+                        <p>Precio: $295000</p>
+                        <p>Figura coleccionable</p>
+                        <button onclick="agregarAlCarrito('Figura Charizard', 295000, 'https://http2.mlstatic.com/D_NQ_NP_719774-MLU73047165037_112023-O.webp', 'Juguetes')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <div class="carousel">
+                            <button class="prev">&lt;</button>
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_821258-MCO49851669099_052022-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_610202-MLU78338993690_082024-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_841881-MLU77883280934_082024-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_863404-MCO45541834712_042021-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_936138-MLM51181080686_082022-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_658395-MCO51279761950_082022-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_816876-MCO78294746977_082024-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_839721-MCO71265572106_082023-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_891723-MCO74558942555_022024-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_707711-MCO75503942232_042024-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_999289-MLU78219050388_082024-O.webp" alt="Funko pop">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_718649-MCO71590665107_092023-O.webp" alt="Funko pop">
+
+                            <button class="next">&gt;</button>
+                        </div>
+                        <h3>Funko pop</h3>
+                        <p>Precio: $105000</p>
+                        <p>Figura coleccionable.</p>
+                        <button onclick="agregarAlCarrito('Funko pop', 105000, 'https://http2.mlstatic.com/D_NQ_NP_719774-MLU73047165037_112023-O.webp', 'Juguetes')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_603670-MLC52738801171_122022-O.webp" alt="Figura pokemon- Psyduck">
+                        <h3>Figura pokemon- Psyduck</h3>
+                        <p>Precio: $50000</p>
+                        <p>Figura coleccionable</p>
+                        <button onclick="agregarAlCarrito('Figura pokemon- Psyduck', 50000, 'https://http2.mlstatic.com/D_NQ_NP_603670-MLC52738801171_122022-O.webp', 'Juguetes')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_729010-MLU54988439284_052023-O.webp" alt="Peluche Meowth Pokémon">
+                        <h3>Peluche Meowth Pokémon</h3>
+                        <p>Precio: $35000</p>
+                        <p>tamaño: 25 cm</p>
+                        <p>cantidad: 10</p>
+                        <button onclick="agregarAlCarrito('Peluche Meowth Pokémon', 35000, 'https://http2.mlstatic.com/D_NQ_NP_729010-MLU54988439284_052023-O.webp', 'Juguetes')">Agregar al carrito</button>
+                    </div>
+                </div>
+                </div>
+            </section>
+            
+            <section class="categoria">
+                <h2>Juegos</h2>
+                <div class="productos-grid">
+                    <div class="producto">
+                        <div class="carousel">
+                            <button class="prev">&lt;</button>
+                            <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d5/latest/20220601144723/Car%C3%A1tula_Pok%C3%A9mon_Escarlata.png/800px-Car%C3%A1tula_Pok%C3%A9mon_Escarlata.png" alt="Pokémon Escarlata">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_975294-MLU72536694330_102023-O.webp" alt="Pokémon Escarlata">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_650564-MLU72537365330_102023-O.webp" alt="Pokémon Escarlata">
+                            
+                            <button class="next">&gt;</button>
+                        </div>
+                        
+                        <h3>Pokémon Escarlata</h3>
+                        <p>Precio: $204000</p>
+                        <button onclick="agregarAlCarrito('Pokémon Escarlata', 204000, 'https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d5/latest/20220601144723/Car%C3%A1tula_Pok%C3%A9mon_Escarlata.png/800px-Car%C3%A1tula_Pok%C3%A9mon_Escarlata.png', 'Juegos')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <div class="carousel">
+                            <button class="prev">&lt;</button>
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_676798-MCO74853668851_032024-O.webp" alt="Pokémon GO Plus">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_737274-MCO74853825195_032024-O.webp" alt="Pokémon GO Plus">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_893324-MCO74853599317_032024-O.webp" alt="Pokémon GO Plus">
+                            <button class="next">&gt;</button>
+                        </div>
+                        <h3>Pokémon GO Plus</h3>
+                        <p>Precio: $296000</p>
+                        <button onclick="agregarAlCarrito('Pokémon GO Plus', 296000, 'https://m.media-amazon.com/images/I/61T1QciCF3L.jpg', 'Juegos')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_677275-MLU78078525583_072024-O.webp" alt="Pokémon arceus">
+                        <h3>Pokémon arceus</h3>
+                        <p>Precio: $212000</p>
+                        <button onclick="agregarAlCarrito('Pokémon arceus', 212000, 'https://http2.mlstatic.com/D_NQ_NP_677275-MLU78078525583_072024-O.webp', 'Juegos')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_794326-MLA52183399962_102022-O.webp" alt="Pokémon violet">
+                        <h3>Pokémon violet</h3>
+                        <p>Precio: $219000</p>
+                        <button onclick="agregarAlCarrito('Pokémon violet', 219000, 'https://http2.mlstatic.com/D_NQ_NP_794326-MLA52183399962_102022-O.webp', 'Juegos')">Agregar al carrito</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="categoria">
+                <h2>Ropa</h2>
+                <div class="productos-grid">
+                    <div class="producto">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_600766-MCO50035103260_052022-O.webp" alt="Buzo gengar">
+                        <h3>Buzo gengar</h3>
+                        <p>Precio: $80000</p>
+                        <button onclick="agregarAlCarrito('Buzo gengar', 80000, 'https://http2.mlstatic.com/D_NQ_NP_600766-MCO50035103260_052022-O.webp', 'Ropa')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_966409-MCO69372703785_052023-O.webp" alt="Chaqueta pokemon">
+                        <h3>Chaqueta Pokemon</h3>
+                        <p>Precio: $100000</p>
+                        <button onclick="agregarAlCarrito('Chaqueta pokemon', 100000, 'https://http2.mlstatic.com/D_NQ_NP_966409-MCO69372703785_052023-O.webp', 'Ropa')">Agregar al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://http2.mlstatic.com/D_Q_NP_2X_907744-MCO73877995265_012024-E.webp" alt="Buzo gengar">
+                        <h3>Buzo gengar</h3>
+                        <p>Precio: $63000</p>
+                        <button onclick="agregarAlCarrito('Buzo gengar', 63000, 'https://http2.mlstatic.com/D_Q_NP_2X_907744-MCO73877995265_012024-E.webp', 'Ropa')">Agregar al carrito</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('Pokemon Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/03/pokemon-bulbasaur-landscape-desktop-wallpaper-preview.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'MiFuente', sans-serif;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #000000;
+    background: linear-gradient(to right, #ff00cc, #333399);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px rgb(228, 224, 15);
+    color: transparent;
+    animation: Animaciontext 5s infinite;
+}
+
+@keyframes Animaciontext {
+    0% { color: rgb(196, 124, 17); }
+    50% { color: rgb(17, 17, 138); }
+    100% { color: rgb(94, 95, 10); }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.container span {
+    background-color: #0057b32f;
+    padding: 1px 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.containerp2 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(112, 53, 53);
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+.containerp2 p {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.containerp3 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(61, 66, 65);
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+
+}
+.containerp3 p {
+    font-family: 'Courier New', Courier, monospace;
+}
+.imagen {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+}
+.imagen2 {
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+}
+.text {
+    overflow: hidden;
+}
+.containerp4 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    color: #000;
+}
+.containerp4 p {
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: px;
+    z-index: 1000;
+}
+
+.menu-toggle input[type="checkbox"] {
+    display: none;
+}
+
+
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 80px; 
+    height: auto;
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease;
+}
+
+
+
+.menu-icon :hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+.menu {  
+    width: 130%;
+    height: 80vh;
+    display: none;
+    position: absolute;
+    top: 90px; 
+    right: px; 
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff7f50;
+}
+
+#toggle:checked ~ .menu {
+    display: block; 
+}
+
+
+#toggle:checked + .menu-icon img {
+    transform: rotate(90deg); 
+}
+.imgtitulo {
+
+    width: 80%;
+    height: auto;
+    max-width: 100%; 
+}
+
+.container1 {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none; 
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.container1.cont {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.container1.cont1 {
+    width: 200px;
+    height: 250px;
+}
+.container1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#img1 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1uwsWc31ZWswGdahaduPeD7Qsw3mm8PJgA&s');
+}
+
+
+#img2 {
+    background-image: url('https://play-lh.googleusercontent.com/ao5M5OolaeqKOk2wFaaIoIxo6YIS5fotAtI19_Vx-712PYU-halC9ylxNz7FB5YQ7Y0');
+}
+
+#img3 {
+    background-image: url('https://wallpapers.com/images/high/dark-darkrai-pokemon-e0lroxtzi2sjgy12.webp');
+}
+
+#img4 {
+    background-image: url('https://wallpapers.com/images/high/zoroark-on-dark-red-background-ab8o9wxtzoc0x2qs.webp');
+}
+
+#img5 {
+    background-image: url('https://moewalls.com/wp-content/uploads/2024/05/pokemon-gengar-thumb-364x205.jpg');
+}
+
+#img6 {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/529/285/307/pokemon-minimalism-squirtle-bulbasaur-wallpaper-preview.jpg');
+}
+
+#img7 {
+    background-image: url('https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABYgh3ukTqYL3hxz4JEs08ph0xxPWVANNKOONxs-fNO59jAbZAzvF8HcN_A1WKz38fIFRgZKR-DlhornLxpZ70liLuzTuGANVOKJi.jpg?r=01f');
+}
+
+#img8 {
+    background-image: url('https://nintenduo.com/wp-content/uploads/2022/05/Pokemon-Nombres-Perdidos-03.webp');
+}
+
+#img9 {
+    background-image: url('https://nintenduo.com/wp-content/uploads/2022/05/Pokemon-Home-Cambio-Ataques-01.webp');
+}
+.button {
+    padding: 20px 20px; 
+    font-size: 20px; 
+    background-image: url(https://i.gifer.com/YNXo.gif); 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    position: fixed; 
+    top: 80%; 
+    right: 7%;
+    z-index: 1000;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #000;
+}
+button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:focus {
+    outline: none; 
+}
+.containerp5 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(223, 62, 62);
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    
+}
+.containerp5 p {
+    font-family: 'Courier New', Courier, monospace;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: rgb(223, 62, 62);
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.containerp6 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(81, 91, 185);
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+.containerp6 p {
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerp7 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(84, 185, 81);
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+.containerp7 p {
+    font-family: 'Courier New', Courier, monospace;
+}
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+thead tr {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #6fa771;
+    color: white;
+    
+}
+
+ul {
+    padding-left: 20px;
+}
+
+td img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+
+@media (max-width: 180px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
+
+.circulo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Cambiado a blanco para mejor contraste */
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-image: url('https://cheappokemonstore.com/cdn/shop/files/CPS_Logo.png?v=1712410401&width=500');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.circulo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejorar legibilidad */
+}
+
+.circulo span {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.circulo {
+    /* ... otras propiedades ... */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: white; /* Asegura que el color del texto se mantenga */
+}
+
+.circulo:hover {
+    transform: scale(1.1);
+    color: white; /* Mantiene el color del texto en el hover */
+}
