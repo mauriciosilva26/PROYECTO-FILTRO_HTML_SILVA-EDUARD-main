@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/03/pokemon-bulbasaur-landscape-desktop-wallpaper-preview.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+        .register-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h2 {
+            color: #3c5aa6;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            color: #2a75bb;
+            font-size: 12px;
+            text-align: left;
+        }
+        input, select {
+            padding: 8px;
+            margin-top: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgb(62, 162, 192);
+            color: rgb(8, 58, 151);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 12px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e54222;
+        }
+        .pokeball {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto 20px;
+            border: 2px solid #000;
+        }
+        .pokeball::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: #ff1c1c;
+            border-radius: 50px 50px 0 0;
+        }
+        .pokeball::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+        .password-container {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #3c5aa6;
+            padding: 0;
+            margin: 0;
+        }
+        .toggle-password:focus {
+            outline: none;
+        }
+        .starter-pokemon {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .starter-pokemon label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .starter-pokemon img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px;
+        }

@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 20px;
     background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/03/pokemon-bulbasaur-landscape-desktop-wallpaper-preview.jpg');
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(63, 160, 152);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -21,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .categoria {
@@ -38,6 +42,7 @@ body {
     padding: 10px;
     border-radius: 4px;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .producto img {
@@ -165,7 +170,7 @@ button:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
     padding: 10px;
@@ -174,8 +179,14 @@ button:hover {
 
 .carousel .prev {
     left: 0;
+    background-image: url(tocar-copia.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .carousel .next {
     right: 0;
+    background-image: url(tocar.png);
+    background-size: cover;
+    background-position: center;
 }
