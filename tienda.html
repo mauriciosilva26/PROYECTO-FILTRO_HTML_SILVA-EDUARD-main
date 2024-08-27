@@ -8,8 +8,8 @@
     <link rel="icon" href="https://cheappokemonstore.com/cdn/shop/files/CPS_Logo.png?v=1712410401&width=500">
 </head>
 <body>
-    <div class="container">
-        <h1>Tienda Pokémon</h1>
+    <div class="container1">
+        <p>“¿Me rindo? ¡De ninguna manera!"</p>
         <div class="buscador-container">
             <button id="toggle-buscador">🔍</button>
             <div id="buscador" class="oculto">
@@ -24,8 +24,22 @@
                 <div id="productos-carrito"></div>
                 <p>Total: $<span id="total-carrito">0</span></p>
                 <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button id="pagar-btn">Pagar</button>
             </div>
         </div>
+    
+        <div id="modal" class="oculto">
+            <div id="modal-content">
+                <h3>Para continuar, inicie sesión o regístrese</h3>
+                <a href="login.html" id="login-btn" class="modal-btn">Iniciar sesión</a>
+                <a href="registro.html" id="register-btn" class="modal-btn">Registrarse</a>
+                <button id="close-modal-btn" class="modal-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Tienda Pokémon</h1>
+        
         <div id="productos">
             <section class="categoria">
                 <h2>Juguetes</h2>

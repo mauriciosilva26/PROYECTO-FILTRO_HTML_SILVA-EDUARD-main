@@ -1,6 +1,56 @@
 let carrito = {};
 
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM completamente cargado y analizado');
+
+    const toggleCarrito = document.getElementById('toggle-carrito');
+    const carritoDesplegable = document.getElementById('carrito-desplegable');
+    const pagarBtn = document.getElementById('pagar-btn');
+    const modal = document.getElementById('modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+
+    // Verificar si los elementos están presentes
+    if (!toggleCarrito || !carritoDesplegable || !pagarBtn || !modal || !closeModalBtn) {
+        console.error('Uno o más elementos no se encontraron en el DOM');
+        return;
+    }
+
+    // Toggle carrito desplegable
+    toggleCarrito.addEventListener('click', function() {
+        carritoDesplegable.classList.toggle('oculto');
+    });
+
+    // Mostrar modal
+    pagarBtn.addEventListener('click', function() {
+        console.log('Pagar botón clickeado');
+        modal.style.display = 'flex';
+    });
+
+    // Cerrar modal
+    closeModalBtn.addEventListener('click', function() {
+        console.log('Cerrar modal botón clickeado');
+        modal.style.display = 'none';
+    });
+
+    // Cerrar el carrito si se hace clic fuera de él
+    document.addEventListener('click', function(event) {
+        if (!carritoDesplegable.contains(event.target) && event.target !== toggleCarrito) {
+            carritoDesplegable.classList.add('oculto');
+        }
+    });
+
+    // Cerrar el modal si se hace clic fuera de su contenido
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            console.log('Modal clickeado');
+            modal.style.display = 'none';
+        }
+    });
+});
+
 function agregarAlCarrito(nombre, precio, imagen, categoria) {
+    console.log('Agregar al carrito:', nombre, precio, imagen, categoria);
+
     if (!carrito[categoria]) {
         carrito[categoria] = [];
     }
@@ -35,6 +85,13 @@ function vaciarCarrito() {
     actualizarCarritoDesplegable();
 }
 
+
+
+
+
+
+
+
 function buscarProductos() {
     const busqueda = document.getElementById('busqueda').value.toLowerCase();
     const productos = document.querySelectorAll('.producto');
@@ -47,7 +104,7 @@ function buscarProductos() {
             producto.style.display = 'none';
         }
     });
-}
+} 
 
 document.getElementById('toggle-buscador').addEventListener('click', function() {
     document.getElementById('buscador').classList.toggle('visible');
@@ -108,4 +165,10 @@ function togglePassword() {
         toggleButton.textContent = '👁️';
     }
 }
+// carrito.js
+
+
+
+
+
 
