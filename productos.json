@@ -54,6 +54,16 @@
             "imagenes": [
                 "https://http2.mlstatic.com/D_NQ_NP_603670-MLC52738801171_122022-O.webp"
             ]
+          },
+          {
+            "id": 5,
+            "nombre": "Peluche meowth pokemon",
+            "precio": 35000,
+            "tamaño":"25 cm",
+            "descripcion": "Suave peluche de meowth",
+            "imagenes": [
+                "https://http2.mlstatic.com/D_NQ_NP_729010-MLU54988439284_052023-O.webp"
+            ]
           }
 
         ]
@@ -62,14 +72,68 @@
         "categoria": "Videojuegos",
         "items": [
           {
-            "id": 3,
+            "id": 6,
             "nombre": "Pokémon Escarlata",
             "precio": 250000,
             "plataforma": "Nintendo Switch",
             "imagenes": [
-              "ruta_imagen_pokemon_escarlata.jpg"
+              "https://http2.mlstatic.com/D_NQ_NP_694481-MLU74971103556_032024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_975294-MLU72536694330_102023-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_650564-MLU72537365330_102023-O.webp" 
+
             ],
             "descripcion": "Último juego de la serie principal de Pokémon"
+          },
+          {
+            "id": 7,
+            "nombre": "Pokémon GO Plus",
+            "precio": 296000,
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_676798-MCO74853668851_032024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_737274-MCO74853825195_032024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_893324-MCO74853599317_032024-O.webp" 
+
+            ]
+
+          },
+          {
+            "id": 8,
+            "nombre": "Pokémon arceus",
+            "precio": 212000,
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_677275-MLU78078525583_072024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_807153-MLA49012133061_022022-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_611026-MLU69999510946_062023-O.webp" 
+
+            ]
+
+          },
+          {
+            "id": 9,
+            "nombre": "Pokémon violet",
+            "precio": 219000,
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_794326-MLA52183399962_102022-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_766939-MLA52183510513_102022-O.webp"
+
+            ]
+
+          }
+        ]
+      },
+      {
+        "categoria": "Ropa",
+        "items": [
+          {
+            "id": 10,
+            "nombre": "Buzo gengar",
+            "precio": 80000,
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_907744-MCO73877995265_012024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_805951-MCO73877654005_012024-O.webp"
+
+            ],
+            "descripcion": ""
           }
         ]
       }
