@@ -1,0 +1,77 @@
+{
+    "productos": [
+      {
+        "categoria": "Juguetes",
+        "items": [
+          {
+            "id": 1,
+            "nombre": "Peluche Pikachu",
+            "precio": 35000,
+            "tamaño": "23 cm",
+            "cantidad": 10,
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_760594-MCO76943980233_062024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_966231-MCO76739268556_062024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_894693-MCO76739327540_062024-O.webp"
+            ],
+            "descripcion": "Suave peluche de Pikachu"
+          },
+          {
+            "id": 2,
+            "nombre": "Figura Charizard",
+            "precio": 295000,
+            "descripcion": "Figura coleccionable",
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_719774-MLU73047165037_112023-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_879474-MLU73047012601_112023-O.webp"
+            ]
+          },
+          {
+            "id": 3,
+            "nombre": "Funco pop",
+            "precio": 105000,
+            "descripcion": "Figura coleccionable",
+            "imagenes": [
+                "https://http2.mlstatic.com/D_NQ_NP_821258-MCO49851669099_052022-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_610202-MLU78338993690_082024-O.webp",   
+                "https://http2.mlstatic.com/D_NQ_NP_841881-MLU77883280934_082024-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_863404-MCO45541834712_042021-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_936138-MLM51181080686_082022-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_658395-MCO51279761950_082022-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_816876-MCO78294746977_082024-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_839721-MCO71265572106_082023-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_891723-MCO74558942555_022024-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_707711-MCO75503942232_042024-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_999289-MLU78219050388_082024-O.webp", 
+                "https://http2.mlstatic.com/D_NQ_NP_718649-MCO71590665107_092023-O.webp"
+            ]
+          },
+          {
+            "id": 4,
+            "nombre": "Figura pokemon- Psyduc",
+            "precio": 295000,
+            "descripcion": "Figura coleccionable",
+            "imagenes": [
+                "https://http2.mlstatic.com/D_NQ_NP_603670-MLC52738801171_122022-O.webp"
+            ]
+          }
+
+        ]
+      },
+      {
+        "categoria": "Videojuegos",
+        "items": [
+          {
+            "id": 3,
+            "nombre": "Pokémon Escarlata",
+            "precio": 250000,
+            "plataforma": "Nintendo Switch",
+            "imagenes": [
+              "ruta_imagen_pokemon_escarlata.jpg"
+            ],
+            "descripcion": "Último juego de la serie principal de Pokémon"
+          }
+        ]
+      }
+    ]
+  }

@@ -9,37 +9,35 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('modal');
     const closeModalBtn = document.getElementById('close-modal-btn');
 
-    // Verificar si los elementos están presentes
+
     if (!toggleCarrito || !carritoDesplegable || !pagarBtn || !modal || !closeModalBtn) {
         console.error('Uno o más elementos no se encontraron en el DOM');
         return;
     }
 
-    // Toggle carrito desplegable
+
     toggleCarrito.addEventListener('click', function() {
         carritoDesplegable.classList.toggle('oculto');
     });
 
-    // Mostrar modal
+
     pagarBtn.addEventListener('click', function() {
         console.log('Pagar botón clickeado');
         modal.style.display = 'flex';
     });
 
-    // Cerrar modal
+
     closeModalBtn.addEventListener('click', function() {
         console.log('Cerrar modal botón clickeado');
         modal.style.display = 'none';
     });
 
-    // Cerrar el carrito si se hace clic fuera de él
     document.addEventListener('click', function(event) {
         if (!carritoDesplegable.contains(event.target) && event.target !== toggleCarrito) {
             carritoDesplegable.classList.add('oculto');
         }
     });
 
-    // Cerrar el modal si se hace clic fuera de su contenido
     modal.addEventListener('click', function(event) {
         if (event.target === modal) {
             console.log('Modal clickeado');
@@ -165,7 +163,85 @@ function togglePassword() {
         toggleButton.textContent = '👁️';
     }
 }
-// carrito.js
+
+
+
+
+
+
+
+
+function mostrarProductos(productos) {
+    const contenedor = document.getElementById('productos');
+    
+    productos.forEach(categoria => {
+        const seccionCategoria = document.createElement('section');
+        seccionCategoria.className = 'categoria';
+        seccionCategoria.innerHTML = `<h2>${categoria.categoria}</h2>`;
+        
+        const productosGrid = document.createElement('div');
+        productosGrid.className = 'productos-grid';
+        
+        categoria.items.forEach(item => {
+            const productoDiv = document.createElement('div');
+            productoDiv.className = 'producto';
+            productoDiv.innerHTML = `
+                <div class="carousel">
+                    ${item.imagenes.map((img, index) => `
+                        <img src="${img}" alt="${item.nombre}" class="${index === 0 ? 'active' : ''}">
+                    `).join('')}
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                </div>
+                <h3>${item.nombre}</h3>
+                <p>Precio: $${item.precio}</p>
+                ${item.tamaño ? `<p>Tamaño: ${item.tamaño}</p>` : ''}
+                ${item.cantidad ? `<p>Cantidad: ${item.cantidad}</p>` : ''}
+                <p>${item.descripcion || ''}</p>
+                <button onclick="agregarAlCarrito('${item.nombre}', ${item.precio}, '${item.imagenes[0]}', '${categoria.categoria}')">
+                    Agregar al carrito
+                </button>
+            `;
+            productosGrid.appendChild(productoDiv);
+            
+            inicializarCarrusel(productoDiv.querySelector('.carousel'));
+        });
+        
+        seccionCategoria.appendChild(productosGrid);
+        contenedor.appendChild(seccionCategoria);
+    });
+}
+
+function inicializarCarrusel(carrusel) {
+    const images = carrusel.querySelectorAll('img');
+    const prevButton = carrusel.querySelector('.prev');
+    const nextButton = carrusel.querySelector('.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+        });
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
+}
+
+// Cargar los productos desde el JSON
+fetch('productos.json')
+    .then(response => response.json())
+    .then(data => {
+        mostrarProductos(data.productos);
+    })
+    .catch(error => console.error('Error:', error));
 
 
 
