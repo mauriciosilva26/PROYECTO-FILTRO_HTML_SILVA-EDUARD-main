@@ -8,7 +8,6 @@
             "nombre": "Peluche Pikachu",
             "precio": 35000,
             "tamaño": "23 cm",
-            "cantidad": 10,
             "imagenes": [
               "https://http2.mlstatic.com/D_NQ_NP_760594-MCO76943980233_062024-O.webp",
               "https://http2.mlstatic.com/D_NQ_NP_966231-MCO76739268556_062024-O.webp",
@@ -128,14 +127,44 @@
             "id": 10,
             "nombre": "Buzo gengar",
             "precio": 80000,
+            "Tallas": "x-xl-s-m",
             "imagenes": [
               "https://http2.mlstatic.com/D_NQ_NP_907744-MCO73877995265_012024-O.webp",
               "https://http2.mlstatic.com/D_NQ_NP_805951-MCO73877654005_012024-O.webp"
 
             ],
-            "descripcion": ""
+            "descripcion": "buzo con capucha"
+          },
+          {
+            "id": 11,
+            "nombre": "Medias",
+            "precio": 10000,
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_713928-MCO78134810008_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_995369-MCO78362673275_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_931238-MCO78362996163_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_749200-MCO78362996179_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_762059-MCO78362683493_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_889466-MCO78362683503_082024-O.webp"
+
+            ],
+            "descripcion": "pokemon"
+          },
+          {
+            "id": 12,
+            "nombre": "Gorra pikachu",
+            "precio": 50000,
+            "imagenes": [
+              "https://http2.mlstatic.com/D_NQ_NP_848650-MCO78219762307_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_731021-MCO78219762305_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_969195-MCO78219762303_082024-O.webp",
+              "https://http2.mlstatic.com/D_NQ_NP_919185-MCO78219762309_082024-O.webp"
+              
+            ],
+            "descripcion": "pokemon"
           }
         ]
+        
       }
     ]
   }

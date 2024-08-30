@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const userData = {
             username: username,
             email: email,
-            password: password // Nota: En una aplicación real, nunca guardes contraseñas en texto plano
+            password: password 
         };
 
         // Simulamos guardar en un archivo JSON
         const jsonData = JSON.stringify(userData);
         localStorage.setItem('registroUsuario', jsonData);
 
-        alert('Registro exitoso. Datos guardados en localStorage.');
+        alert('Registro exitoso. Datos guardados .');
         console.log('Datos guardados:', jsonData);
 
         // Limpiamos el formulario después del registro exitoso

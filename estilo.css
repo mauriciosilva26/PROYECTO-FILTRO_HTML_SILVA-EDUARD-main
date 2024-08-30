@@ -13,12 +13,30 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgb(92, 177, 189);
+    background-image: url('https://www.pixel4k.com/wp-content/uploads/2023/09/pokemon-4k_1696026773.jpg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     position: relative;
     text-align: center;
+}
+@media (max-width: 580px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-image: url('https://www.chromethemer.com/wallpapers/phone/images/640/pokemon.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: relative;
+        text-align: center;
+    }
 }
 
 #productos {
@@ -69,7 +87,10 @@ button:hover {
 }
 
 .container1 {
-    background-color: rgb(92, 177, 189);
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-pantalla-sky-videoconferencias_23-2148609935.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     padding: 30px; 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -96,7 +117,7 @@ button:hover {
 
 
 #toggle-buscador {
-    background-color: #4CAF50;
+    background-color: rgb(21, 143, 199);
     color: white;
     border: none;
     padding: 10px;
@@ -137,7 +158,7 @@ button:hover {
 
 
 #toggle-carrito {
-    background-color: #4CAF50;
+    background-color:  rgb(21, 143, 199);
     color: white;
     border: none;
     padding: 10px;
@@ -308,3 +329,4 @@ button:hover {
         height: 150px; 
     }
 }
+
